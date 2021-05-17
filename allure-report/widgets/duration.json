@@ -1,0 +1,9 @@
+[ {
+  "uid" : "50f68fc84986e6d9",
+  "name" : "include",
+  "time" : {
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

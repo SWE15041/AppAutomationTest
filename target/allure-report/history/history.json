@@ -1,0 +1,19 @@
+{
+  "org.lyn.IncludeTest:org.lyn.IncludeTest#include" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ddb46cc66710173f",
+      "status" : "passed",
+      "time" : {
+        "duration" : 2
+      }
+    } ]
+  }
+}

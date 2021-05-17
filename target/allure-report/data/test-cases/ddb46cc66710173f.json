@@ -1,0 +1,53 @@
+{
+  "uid" : "ddb46cc66710173f",
+  "name" : "include",
+  "historyId" : "org.lyn.IncludeTest:org.lyn.IncludeTest#include",
+  "time" : {
+    "duration" : 2
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "656ccc965d0b4c40",
+      "name" : "System out",
+      "source" : "656ccc965d0b4c40.txt",
+      "type" : "text/plain",
+      "size" : 287
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "org.lyn.IncludeTest"
+  }, {
+    "name" : "testClass",
+    "value" : "org.lyn.IncludeTest"
+  }, {
+    "name" : "package",
+    "value" : "org.lyn.IncludeTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ddb46cc66710173f.json",
+  "parameterValues" : [ ]
+}
