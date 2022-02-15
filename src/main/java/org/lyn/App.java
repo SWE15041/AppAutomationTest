@@ -1,3 +1,4 @@
+
 package org.lyn;
 
 import io.appium.java_client.AppiumDriver;
@@ -24,8 +25,8 @@ public class App {
     }
 
     public void prepare() throws MalformedURLException {
-//        File app = new File("/Users/Yanni/Automation/packages/wonderQA_1.35.0-c11c891d3.ipa");
         File app = new File("/Users/Yanni/Automation/packages/wonderQA_1.35.0-567898db7.app");
+//        File app = new File("/Users/Yanni/Automation/packages/wonderQA_1.35.0-c11c891d3.ipa");
 //        File app = new File("/Users/Yanni/Automation/packages/wonderQA_1.36.0-3fbac4941.ipa");
 //        File app = new File("/Users/Yanni/Library/Developer/Xcode/DerivedData/wonder-bhjtsafxuuffuxfbzqwpybdltyaw/Build/Products/Debug-iphonesimulator/wonder.app");
 //        File app = new File("The absolute or relative path to an *.app, *.zip or ipa file");

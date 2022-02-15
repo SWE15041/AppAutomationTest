@@ -1,4 +1,4 @@
-package org.lyn;
+package org.lyn.ios;
 
 /**
  * @author Yanni

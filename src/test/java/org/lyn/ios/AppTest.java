@@ -1,4 +1,4 @@
-package org.lyn;
+package org.lyn.ios;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
@@ -45,31 +45,32 @@ public class AppTest {
 
     @Before
     public void setup() throws Exception {
-        File app = new File("/Users/Yanni/Automation/packages/qa/wonderQA_1.39.0-22bf911af.app");
+        File app = new File("/Users/yannilan/workspace/Chancetop/Automation/app/wonderQA_2.3.1-5e55a20ce.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 11");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.4");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 13");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
 
-        driver = new IOSDriver<WebElement>(new URL("http://127.0.0.1:4010/wd/hub"), capabilities);
+        driver = new IOSDriver<>(new URL("http://127.0.0.1:4010/wd/hub"), capabilities);
 //        System.out.println("remove app");
 //        driver.removeApp("com.remarkablefoods.consumerQA");
 //        System.out.println("install app");
 //        driver.installApp(app.getAbsolutePath());
-//
 //        System.out.println("install app finished.");
     }
 
     @Test
     public void clickAllowNotifyMe() throws Exception {
-
         System.out.println("current page: welcome page");
         String buttonElementId = "Allow";
-        IOSElement buttonElement = (IOSElement) new WebDriverWait(driver, 30)
+        IOSElement buttonElement1 = (IOSElement) new WebDriverWait(driver, 30)
             .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(buttonElementId)));
-        buttonElement.click();
+        buttonElement1.click();
+        IOSElement buttonElement2 = (IOSElement) new WebDriverWait(driver, 30)
+            .until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(buttonElementId)));
+        buttonElement2.click();
 
 //        driver.launchApp();
         IOSElement login_button_on_welcome_page = (IOSElement) new WebDriverWait(driver, 30)
